@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحويل تطبيق الويب إلى أندرويد</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .step-number {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #4f46e5;
+            color: white;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- شريط التنقل -->
+    <nav class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fab fa-android text-3xl mr-2"></i>
+                    <h1 class="text-2xl font-bold">محول الويب إلى أندرويد</h1>
+                </div>
+                <div>
+                    <a href="#features" class="px-3 py-2 hover:bg-purple-700 rounded transition">المميزات</a>
+                    <a href="#steps" class="px-3 py-2 hover:bg-purple-700 rounded transition">الخطوات</a>
+                    <a href="#tools" class="px-3 py-2 hover:bg-purple-700 rounded transition">الأدوات</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">حول تطبيق الويب الخاص بك إلى تطبيق أندرويد</h1>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">قم بتحويل موقعك الإلكتروني إلى تطبيق أندرويد كامل الوظائف مع وصول إلى جميع إمكانيات الجهاز</p>
+            <div class="flex justify-center space-x-4 space-x-reverse">
+                <a href="#steps" class="bg-white text-purple-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition">ابدأ الآن</a>
+                <a href="#features" class="border-2 border-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:bg-opacity-10 transition">المزيد من التفاصيل</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المميزات -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">مميزات التطبيق الأندرويد</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- بطاقة مميزة 1 -->
+                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-mobile-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">واجهة أصلية</h3>
+                    <p class="text-gray-600">تطبيق بأداء عالي وواجهة مستخدم أصلية تعمل بسلاسة على جميع أجهزة أندرويد</p>
+                </div>
+                
+                <!-- بطاقة مميزة 2 -->
+                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-bell text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">الإشعارات</h3>
+                    <p class="text-gray-600">إرسال إشعارات مباشرة إلى المستخدمين لزيادة التفاعل مع التطبيق</p>
+                </div>
+                
+                <!-- بطاقة مميزة 3 -->
+                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-camera text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">الوصول إلى الجهاز</h3>
+                    <p class="text-gray-600">استخدم الكاميرا، الميكروفون، الموقع الجغرافي وغيرها من ميزات الجهاز</p>
+                </div>
+                
+                <!-- بطاقة مميزة 4 -->
+                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-store text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">متجر جوجل بلاي</h3>
+                    <p class="text-gray-600">نشر التطبيق على متجر جوجل بلاي للوصول إلى ملايين المستخدمين</p>
+                </div>
+                
+                <!-- بطاقة مميزة 5 -->
+                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-offline text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">العمل دون اتصال</h3>
+                    <p class="text-gray-600">إمكانية العمل دون اتصال بالإنترنت باستخدام خاصية التخزين المحلي</p>
+                </div>
+                
+                <!-- بطاقة مميزة 6 -->
+                <div class="feature-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-lock text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">الأمان</h3>
+                    <p class="text-gray-600">حماية بيانات المستخدمين وتشفير الاتصالات للحفاظ على الخصوصية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخطوات -->
+    <section id="steps" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">كيفية التحويل إلى تطبيق أندرويد</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <!-- الخطوة 1 -->
+                <div class="flex items-start mb-8 p-6 bg-white rounded-lg shadow-md">
+                    <div class="step-number">1</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">استخدام WebView</h3>
+                        <p class="text-gray-600 mb-4">أسهل طريقة لتحويل موقعك إلى تطبيق أندرويد هي استخدام WebView الذي يعرض موقعك داخل تطبيق أندرويد.</p>
+                        <div class="bg-gray-800 text-white p-4 rounded-lg font-mono text-sm overflow-x-auto">
+                            &lt;WebView<br>
+                            &nbsp;&nbsp;android:layout_width="match_parent"<br>
+                            &nbsp;&nbsp;android:layout_height="match_parent"<br>
+                            &nbsp;&nbsp;android:url="https://yourwebsite.com"<br>
+                            /&gt;
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- الخطوة 2 -->
+                <div class="flex items-start mb-8 p-6 bg-white rounded-lg shadow-md">
+                    <div class="step-number">2</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">إضافة صلاحيات الأندرويد</h3>
+                        <p class="text-gray-600 mb-4">لتمكين الوصول إلى ميزات الجهاز، تحتاج إلى إضافة الصلاحيات المطلوبة في ملف AndroidManifest.xml.</p>
+                        <div class="bg-gray-800 text-white p-4 rounded-lg font-mono text-sm overflow-x-auto">
+                            &lt;uses-permission android:name="android.permission.CAMERA" /&gt;<br>
+                            &lt;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /&gt;<br>
+                            &lt;uses-permission android:name="android.permission.RECORD_AUDIO" /&gt;<br>
+                            &lt;uses-permission android:name="android.permission.INTERNET" /&gt;
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- الخطوة 3 -->
+                <div class="flex items-start mb-8 p-6 bg-white rounded-lg shadow-md">
+                    <div class="step-number">3</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">التواصل بين JavaScript و Java</h3>
+                        <p class="text-gray-600 mb-4">لتمكين التفاعل بين موقع الويب والكود الأصلي للأندرويد، يمكنك استخدام JavaScript Interface.</p>
+                        <div class="bg-gray-800 text-white p-4 rounded-lg font-mono text-sm overflow-x-auto">
+                            webView.addJavascriptInterface(new WebAppInterface(this), "Android");<br><br>
+                            
+                            public class WebAppInterface {<br>
+                            &nbsp;&nbsp;Context mContext;<br><br>
+                            
+                            &nbsp;&nbsp;WebAppInterface(Context c) { mContext = c; }<br><br>
+                            
+                            &nbsp;&nbsp;@JavascriptInterface<br>
+                            &nbsp;&nbsp;public void showToast(String toast) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Toast.makeText(mContext, toast, Toast.LENGTH_SHORT).show();<br>
+                            &nbsp;&nbsp;}<br>
+                            }
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- الخطوة 4 -->
+                <div class="flex items-start mb-8 p-6 bg-white rounded-lg shadow-md">
+                    <div class="step-number">4</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">بناء ملف APK</h3>
+                        <p class="text-gray-600 mb-4">بعد إعداد المشروع، يمكنك بناء ملف APK للتثبيت على الأجهزة أو نشره على متجر جوجل بلاي.</p>
+                        <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4">
+                            <p class="text-yellow-700"><i class="fas fa-exclamation-triangle mr-2"></i> تأكد من توقيع التطبيق بشكل صحيح قبل النشر على متجر جوجل بلاي.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأدوات -->
+    <section id="tools" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">أدوات مساعدة للتحويل</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- أداة 1 -->
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition">
+                    <div class="flex items-center mb-4">
+                        <img src="https://cordova.apache.org/static/img/cordova-logo-portrait.png" alt="Apache Cordova" class="h-12 mr-4">
+                        <h3 class="text-xl font-bold">Apache Cordova</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">إطار عمل لبناء تطبيقات الهاتف باستخدام HTML, CSS و JavaScript مع وصول إلى ميزات الجهاز.</p>
+                    <a href="https://cordova.apache.org/" target="_blank" class="text-purple-600 font-bold hover:underline">الموقع الرسمي</a>
+                </div>
+                
+                <!-- أداة 2 -->
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition">
+                    <div class="flex items-center mb-4">
+                        <img src="https://capacitorjs.com/assets/img/logo.png" alt="Capacitor" class="h-12 mr-4">
+                        <h3 class="text-xl font-bold">Capacitor</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">منصة لبناء تطبيقات ويب متقدمة تعمل على الويب والهاتف مع وصول إلى APIs الجهاز.</p>
+                    <a href="https://capacitorjs.com/" target="_blank" class="text-purple-600 font-bold hover:underline">الموقع الرسمي</a>
+                </div>
+                
+                <!-- أداة 3 -->
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition">
+                    <div class="flex items-center mb-4">
+                        <img src="https://ionicframework.com/docs/assets/icons/logo-react-icon.png" alt="React Native" class="h-12 mr-4">
+                        <h3 class="text-xl font-bold">React Native</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">إطار عمل من فيسبوك لبناء تطبيقات أصلية باستخدام JavaScript و React.</p>
+                    <a href="https://reactnative.dev/" target="_blank" class="text-purple-600 font-bold hover:underline">الموقع الرسمي</a>
+                </div>
+                
+                <!-- أداة 4 -->
+                <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition">
+                    <div class="flex items-center mb-4">
+                        <img src="https://flutter.dev/assets/flutter-lockup-1caf6476beed76adec3c477586da54de6b552b2f42108ec5bc68dc63bae2df75.png" alt="Flutter" class="h-12 mr-4">
+                        <h3 class="text-xl font-bold">Flutter</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">إطار عمل من جوجل لبناء تطبيقات أصلية متعددة المنصات باستخدام لغة Dart.</p>
+                    <a href="https://flutter.dev/" target="_blank" class="text-purple-600 font-bold hover:underline">الموقع الرسمي</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأسئلة الشائعة -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12">الأسئلة الشائعة</h2>
+            
+            <div class="space-y-4">
+                <!-- سؤال 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button onclick="toggleFAQ(1)" class="flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-bold">هل يمكن تحويل أي موقع ويب إلى تطبيق أندرويد؟</h3>
+                        <i id="faq-icon-1" class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="faq-answer-1" class="mt-3 text-gray-600 hidden">
+                        نعم، يمكن تحويل معظم مواقع الويب إلى تطبيقات أندرويد باستخدام WebView. ومع ذلك، المواقع التي تعتمد بشكل كبير على ميزات متصفح معينة قد تحتاج إلى تعديلات إضافية.
+                    </div>
+                </div>
+                
+                <!-- سؤال 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button onclick="toggleFAQ(2)" class="flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-bold">هل أحتاج إلى معرفة بلغة Java أو Kotlin لتحويل موقعي؟</h3>
+                        <i id="faq-icon-2" class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="faq-answer-2" class="mt-3 text-gray-600 hidden">
+                        ليس بالضرورة. هناك أدوات مثل Cordova وCapacitor تتيح لك بناء تطبيقات أندرويد باستخدام HTML وCSS وJavaScript فقط. ولكن معرفة أساسية بلغة Java أو Kotlin ستساعدك في إضافة ميزات متقدمة.
+                    </div>
+                </div>
+                
+                <!-- سؤال 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button onclick="toggleFAQ(3)" class="flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-bold">كم تكلفة نشر التطبيق على متجر جوجل بلاي؟</h3>
+                        <i id="faq-icon-3" class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="faq-answer-3" class="mt-3 text-gray-600 hidden">
+                        تبلغ رسوم التسجيل في متجر جوجل بلاي 25 دولارًا لمرة واحدة. بعد ذلك يمكنك نشر عدد غير محدود من التطبيقات بدون رسوم إضافية (باستثناء أي رسوم قد تفرضها على المستخدمين داخل التطبيق).
+                    </div>
+                </div>
+                
+                <!-- سؤال 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <button onclick="toggleFAQ(4)" class="flex justify-between items-center w-full text-left">
+                        <h3 class="text-lg font-bold">هل يمكنني تحديث التطبيق بدون إصدار جديد؟</h3>
+                        <i id="faq-icon-4" class="fas fa-chevron-down"></i>
+                    </button>
+                    <div id="faq-answer-4" class="mt-3 text-gray-600 hidden">
+                        إذا كنت تستخدم WebView لعرض موقع ويب، يمكنك تحديث المحتوى مباشرة على الخادم دون الحاجة إلى إصدار جديد للتطبيق. ولكن لأي تغييرات في كود الأندرويد الأصلي، ستحتاج إلى إصدار جديد.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الاتصال -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">هل لديك أي استفسارات؟</h2>
+            <p class="text-xl mb-8">اتصل بنا للحصول على مساعدة في تحويل موقعك إلى تطبيق أندرويد</p>
+            <a href="mailto:support@example.com" class="bg-white text-purple-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">تواصل معنا</a>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold flex items-center">
+                        <i class="fab fa-android mr-2"></i> محول الويب إلى أندرويد
+                    </h3>
+                    <p class="text-gray-400 mt-2">أداة لتحويل مواقع الويب إلى تطبيقات أندرويد كاملة الوظائف</p>
+                </div>
+                <div class="flex space-x-4 space-x-reverse">
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-github"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 محول الويب إلى أندرويد. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // وظيفة لعرض/إخفاء إجابات الأسئلة الشائعة
+        function toggleFAQ(num) {
+            const answer = document.getElementById(`faq-answer-${num}`);
+            const icon = document.getElementById(`faq-icon-${num}`);
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                answer.classList.add('hidden');
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
+        
+        // وظيفة للتمرير السلس عند النقر على روابط التنقل
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
